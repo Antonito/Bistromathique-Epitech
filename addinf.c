@@ -5,7 +5,7 @@
 ** Login   <arnaud_e@epitech.net>
 ** 
 ** Started on  Mon Oct 19 09:59:53 2015 arthur arnaud
-** Last update Fri Oct 30 19:52:47 2015 Antoine Baché
+** Last update Fri Oct 30 21:39:06 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -59,35 +59,6 @@ char	*add_calc(char *n1, char *n2, char *res, int base)
     {
       m = value(n1, i) + value(n2, j) + ret;
       ret = m / base;
-      res[end] = m % base + 1;
-      end = end - 1;
-      i = i - 1;
-      j = j - 1;
-    }
-  return (res);
-}
-
-char	*sub_calc(char *n1, char *n2, char *res, int base)
-{
-  int	i;
-  int	j;
-  int	m;
-  int	ret;
-  int	end;
-
-  i = my_strlen(n1) - 1;
-  j = my_strlen(n2) - 1;
-  end = my_strlen(res) - 1;
-  ret = 0;
-  while (end)
-    {
-      m = value(n1, i) - value(n2, j) + ret;
-      ret = m / base;
-      if (m < 0)
-	{
-	  m = m + base;
-	  ret = ret - 1;
-	}
       res[end] = m % base + 1;
       end = end - 1;
       i = i - 1;

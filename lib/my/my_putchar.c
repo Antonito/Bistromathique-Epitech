@@ -1,11 +1,11 @@
 /*
-** my_putchar.c for lib in /home/petren_l/rendu/lib
+** my_putchar.c for Bistromathique in /Piscine_C_bistromathique/lib/my
 ** 
 ** Made by ludovic petrenko
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Wed Oct  7 10:05:44 2015 ludovic petrenko
-** Last update Wed Oct  7 21:39:52 2015 ludovic petrenko
+** Last update Fri Oct 30 21:25:45 2015 Antoine Baché
 */
 
 void	my_putchar(char c)

@@ -1,14 +1,14 @@
 /*
-** my_putstr.c for lib in /home/petren_l/rendu/lib
+** my_putstr_err.c for Bistromathique in /Piscine_C_bistromathique/lib/my
 ** 
 ** Made by ludovic petrenko
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Wed Oct  7 10:31:04 2015 ludovic petrenko
-** Last update Fri Oct 23 15:22:38 2015 ludovic petrenko
+** Last update Fri Oct 30 21:29:18 2015 Antoine Baché
 */
 
-int	my_putstr_err(char *str)
+void	my_putstr_err(char *str)
 {
   int	i;
 
@@ -16,6 +16,6 @@ int	my_putstr_err(char *str)
   while (str[i])
     {
       my_putchar_err(str[i]);
-      i++;
+      i = i + 1;
     }
 }

@@ -1,11 +1,11 @@
 /*
-** my_strcmp.c for lib in /home/petren_l/rendu/lib
+** my_strcmp.c for Bistromathique in /Piscine_C_bistromathique/lib/my
 ** 
 ** Made by ludovic petrenko
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Wed Oct  7 22:19:43 2015 ludovic petrenko
-** Last update Wed Oct  7 22:19:53 2015 ludovic petrenko
+** Last update Fri Oct 30 21:30:14 2015 Antoine Baché
 */
 
 int	my_strcmp(char *s1, char *s2)
@@ -23,7 +23,7 @@ int	my_strcmp(char *s1, char *s2)
     {
       if (s1[i] != s2[i])
 	j = s1[i] - s2[i];
-      i++;
+      i = i + 1;
     }
   return (j);
 }

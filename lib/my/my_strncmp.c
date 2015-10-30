@@ -1,11 +1,11 @@
 /*
-** my_strncmp.c for day 06 in /ex_07
+** my_strncmp.c for Bistromathique in /Piscine_C_bistromathique/lib/my
 ** 
 ** Made by ludovic petrenko
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Mon Oct  5 14:11:50 2015 ludovic petrenko
-** Last update Wed Oct  7 10:35:30 2015 ludovic petrenko
+** Last update Fri Oct 30 21:32:57 2015 Antoine Baché
 */
 
 int	my_strncmp(char *s1, char *s2, int n)
@@ -19,7 +19,7 @@ int	my_strncmp(char *s1, char *s2, int n)
     {
       if (s1[i] != s2[i])
 	j = s1[i] - s2[i];
-      i++;
+      i = i + 1;
     }
   return (j);
 }

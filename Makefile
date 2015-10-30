@@ -5,7 +5,7 @@
 ## Login   <bache_a@epitech.net>
 ## 
 ## Started on  Fri Oct 30 20:05:42 2015 Antoine Baché
-## Last update Fri Oct 30 20:05:51 2015 Antoine Baché
+## Last update Fri Oct 30 21:39:29 2015 Antoine Baché
 ##
 
 
@@ -30,6 +30,7 @@ SRC=	addinf.c \
 	parser.c \
 	prepare_list.c \
 	rd_expr.c \
+	subinf.c \
 	tokenise.c
 
 NAME=	calc
