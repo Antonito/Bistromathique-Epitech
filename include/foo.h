@@ -5,7 +5,7 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Fri Oct 30 20:06:14 2015 Antoine Baché
-** Last update Fri Oct 30 20:06:31 2015 Antoine Baché
+** Last update Fri Oct 30 23:59:33 2015 Antoine Baché
 */
 
 
@@ -29,15 +29,20 @@ void		clear_zero(char *str);
 void		check_args(char **av);
 void		check_doublon(char *str);
 void		check_valid_list(t_list *list);
+char		*div_calc(char *nb1, char *nb2, int base);
+void		*divinf(t_token *t1, t_token *t2);
 void		do_op(t_token **stack, t_token *op, int base);
 void		free_token(t_token *token);
 void		infinadd(t_token *t1, t_token *t2, int base);
 char		*init(char *n1, char *n2);
+char		*init_mod(char *nb1, char *nb2);
 int		is_in_str(char c, char *str);
 t_list		*lexer(char *expr, char *base, char *ope);
+void		modinf(t_token *t1, t_token *t2, int base);
 char		*mult_calc(int base, char *n1, char *n2, char *res);
 void		multinf(t_token *token1, t_token *token2, int base);
 int		my_cmp(char *n1, char *n2);
+char		*my_divide(char *nb1, char *nb2, char *nb3);
 void		my_error(char *error_msg);
 void		my_aff_list(t_list *list);
 char		*my_strdup(char *src);

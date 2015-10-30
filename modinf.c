@@ -1,70 +1,53 @@
 /*
-** modinf.c for Bistromathique in /home/bache_a/rendu
+** modinf.c for Bistromathique in /Piscine_C_bistromathique
 ** 
 ** Made by Antoine Baché
 ** Login   <bache_a@epitech.net>
 ** 
-** Started on  Mon Oct 26 21:20:18 2015 Antoine Baché
-** Last update Fri Oct 30 13:52:14 2015 ludovic petrenko
+** Started on  Fri Oct 30 22:21:25 2015 Antoine Baché
+** Last update Sat Oct 31 00:24:21 2015 Antoine Baché
 */
 
 #include <stdlib.h>
+#include "include/my.h"
+#include "include/foo.h"
+#include "include/my_struct.h"
 
-char	*expand_nb3_sup(char *nb1, char *nb2, char *nb3)
+char	*init_mod(char *nb1, char *nb2)
 {
-  int	j;
+  int	i;
+  char	*res;
 
-  j = 0;
-  while (nb2[j] != '\0')
+  res = malloc(my_strlen(nb1) + 1);
+  if (res == NULL)
+    my_error(ERROR_MSG);
+  i = 0;
+  while (i <= my_strlen(nb1))
     {
-      nb3[j + 1] = nb2[j];
-      j = j + 1;
+      res[i] = 1;
+      i = i + 1;
     }
-  while (j + 1 < my_strlen(nb1))
-    {
-      nb3[j + 1] =  nb2[j];
-      j = j + 1;
-    }
-  return (nb3);
+  res[i] = '\0';
+  return (res);
 }
 
-char	*result_mod(int i)
+void	modinf(t_token *t1, t_token *t2, int base)
 {
-  char	*result_mod;
+  char	*res;
+  char	*tmp;
 
-  if ((result_mod = malloc(2)) == NULL)
+  tmp = init_mod(t1->data, t2->data);
+  if (t2->data[0] == 1 && my_strlen(t2->data) == 1)
+    my_error(ERROR_MSG);
+  else if (my_cmp(t1->data, t2->data) == 1 ||
+	   (my_strlen(t1->data) > my_strlen(t2->data)) &&
+	   (my_strlen(t2->data) == 1 && t2->data[0] > 2) &&
+	   my_strcmp(t1->data, t2->data) != 0)
     {
-      my_error(ERROR_MSG);
-    }
-  result_mod[0] = i + 1;
-  result_mod[1] = '\0';
-  return (result_mod);
-}
-
-char	*modinfin(char *nb1, char *nb2)
-{
-  if ((nb2 - 1)== 2)
-    {
-      return (((nb1[my_strlen(nb1) - 1]) % 2) + 1);
-    }
-  else if ((nb2 - 1) == 1)
-    {
-      return (nb1);
-    }
-  else
-    {
-      return (my_subinf(nb1, my_divinf(nb1, nb2));
-    }
-}
-
-char	*mod_infin_check_z(char *nb1, char *nb2)
-{
-  if (nb2[0] == 1 && my_strlen(nb2) == 1)
-    {
-      my_error(ERROR_MSG);
-    }
-  else
-    {
-      return (modinfin(nb1, nb2));
+      res = div_calc(t1->data, t2->data, base);
+      res = mult_calc(base ,res, t2->data, tmp);
+      res = sub_calc(t1->data, res, init(t1->data, res),base);
+      free(t1->data);
+      t1->data = res;
     }
 }

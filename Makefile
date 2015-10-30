@@ -5,7 +5,7 @@
 ## Login   <bache_a@epitech.net>
 ## 
 ## Started on  Fri Oct 30 20:05:42 2015 Antoine Baché
-## Last update Fri Oct 30 21:39:29 2015 Antoine Baché
+## Last update Sat Oct 31 00:26:41 2015 Antoine Baché
 ##
 
 
@@ -19,10 +19,12 @@ SRC=	addinf.c \
 	check_args.c \
 	clear_zero.c \
 	do_op.c \
+	divinf.c \
 	free_token.c \
 	is_in_str.c \
 	lexer.c \
 	main.c \
+	modinf.c \
 	multinf.c \
 	my_error.c \
 	my_strndup.c \
@@ -43,7 +45,7 @@ RM=	rm -f
 
 OBJ=	$(SRC:.c=.o)
 
-CFLAGS= -W -Wall -Werror -Wformat -Wformat-security -Wformat-nonliteral -Wformat=2 -Wno-format-extra-args -g
+#CFLAGS= -W -Wall -Werror -Wformat -Wformat-security -Wformat-nonliteral -Wformat=2 -Wno-format-extra-args -g
 
 $(NAME):	$(OBJ)
 	$(CC) $(OBJ) -o $(NAME) -lmy -Llib

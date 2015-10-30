@@ -5,7 +5,7 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Wed Oct 28 14:54:36 2015 ludovic petrenko
-** Last update Fri Oct 30 19:58:55 2015 Antoine Baché
+** Last update Sat Oct 31 00:02:36 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -18,7 +18,7 @@ void	set_op(void (**tab)(t_token*, t_token*, int))
   tab[0] = &infinadd;
   tab[2] = &multinf;
   //  tab[3] = &divinf;
-  //  tab[4] = &modinf;
+  tab[4] = &modinf;
   //  tab[5] = &powinf;
 }
 
