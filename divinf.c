@@ -5,12 +5,12 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Fri Oct 30 22:56:50 2015 Antoine Baché
-** Last update Sat Oct 31 23:43:04 2015 Antoine Baché
+** Last update Sun Nov  1 00:54:25 2015 Antoine Baché
 */
 
 #include <stdlib.h>
 #include "include/my.h"
-#include "include/foo.h"
+#include "include/my_struct.h"
 
 char	*retract_div(char *nb3)
 {

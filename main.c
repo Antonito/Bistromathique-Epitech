@@ -5,12 +5,12 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 20 09:02:34 2015 ludovic petrenko
-** Last update Sat Oct 31 20:10:02 2015 Antoine Baché
+** Last update Sun Nov  1 00:55:37 2015 Antoine Baché
 */
 
 #include <stdlib.h>
 #include "include/my.h"
-#include "include/foo.h"
+#include "include/my_struct.h"
 
 int	main(int ac, char **av)
 {

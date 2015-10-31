@@ -5,12 +5,12 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 20 14:05:52 2015 ludovic petrenko
-** Last update Sat Oct 31 13:51:14 2015 Antoine Baché
+** Last update Sun Nov  1 00:53:02 2015 Antoine Baché
 */
 
 #include <stdlib.h>
 #include "include/my.h"
-#include "include/foo.h"
+#include "include/my_struct.h"
 
 int	priority(t_list *list, char c)
 {

@@ -5,12 +5,12 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Wed Oct 28 14:54:36 2015 ludovic petrenko
-** Last update Sat Oct 31 23:20:48 2015 Antoine Baché
+** Last update Sun Nov  1 00:54:38 2015 Antoine Baché
 */
 
 #include <stdlib.h>
 #include "include/my.h"
-#include "include/foo.h"
+#include "include/my_struct.h"
 
 void	set_op(void (**tab)(t_token*, t_token*, int))
 {

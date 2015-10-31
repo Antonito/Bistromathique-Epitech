@@ -5,12 +5,12 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Tue Oct 20 13:11:12 2015 Antoine Baché
-** Last update Sat Oct 31 23:23:48 2015 Antoine Baché
+** Last update Sun Nov  1 00:57:41 2015 Antoine Baché
 */
 
 #include <stdlib.h>
 #include "include/my.h"
-#include "include/foo.h"
+#include "include/my_struct.h"
 
 void	add_stack(t_token **stack, t_token *token)
 {

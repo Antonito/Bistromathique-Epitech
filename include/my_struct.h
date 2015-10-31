@@ -5,11 +5,11 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Fri Oct 30 20:06:14 2015 Antoine Baché
-** Last update Sun Nov  1 00:22:59 2015 Antoine Baché
+** Last update Sun Nov  1 00:51:51 2015 Antoine Baché
 */
 
-#ifndef FOO_H_
-# define FOO_H_
+#ifndef MY_STRUCT_H_
+# define MY_STRUCT_H_
 
 # define SYNTAXE_ERROR_MSG ("Syntax error")
 # define ERROR_MSG ("Error")
@@ -86,4 +86,4 @@ int	unary(t_list *list, char *str);
 void	unary_parenthesis(t_list *list);
 int	value(char *nb, int i);
 
-#endif /* !FOO_H_ */
+#endif /* !MY_STRUCT_H_ */

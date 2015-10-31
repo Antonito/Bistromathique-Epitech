@@ -5,13 +5,13 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Fri Oct 23 14:31:55 2015 ludovic petrenko
-** Last update Sat Oct 31 05:58:09 2015 Antoine Baché
+** Last update Sun Nov  1 00:58:42 2015 Antoine Baché
 */
 
 #include <stdlib.h>
 #include <unistd.h>
 #include "include/my.h"
-#include "include/foo.h"
+#include "include/my_struct.h"
 
 char	*rd_expr(char *read_size_str)
 {

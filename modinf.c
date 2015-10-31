@@ -5,12 +5,12 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Fri Oct 30 22:21:25 2015 Antoine Baché
-** Last update Sun Nov  1 00:43:38 2015 Antoine Baché
+** Last update Sun Nov  1 00:55:58 2015 Antoine Baché
 */
 
 #include <stdlib.h>
 #include "include/my.h"
-#include "include/foo.h"
+#include "include/my_struct.h"
 
 char	*init_mod(char *nb1, char *nb2)
 {

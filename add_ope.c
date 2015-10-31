@@ -5,12 +5,12 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 20 10:31:44 2015 ludovic petrenko
-** Last update Sat Oct 31 13:51:01 2015 Antoine Baché
+** Last update Sun Nov  1 00:52:43 2015 Antoine Baché
 */
 
 #include <stdlib.h>
 #include "include/my.h"
-#include "include/foo.h"
+#include "include/my_struct.h"
 
 int		add_ope(t_list *list, char *str)
 {

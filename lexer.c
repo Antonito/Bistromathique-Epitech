@@ -5,12 +5,12 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 20 09:37:53 2015 ludovic petrenko
-** Last update Sat Oct 31 23:16:18 2015 Antoine Baché
+** Last update Sun Nov  1 00:55:21 2015 Antoine Baché
 */
 
 #include <stdlib.h>
 #include "include/my.h"
-#include "include/foo.h"
+#include "include/my_struct.h"
 
 void		check_valid_list(t_list *list)
 {

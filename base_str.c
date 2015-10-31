@@ -5,10 +5,10 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 27 17:24:04 2015 ludovic petrenko
-** Last update Fri Oct 30 19:55:51 2015 Antoine Baché
+** Last update Sun Nov  1 00:53:36 2015 Antoine Baché
 */
 
-#include "include/foo.h"
+#include "include/my_struct.h"
 
 void	base_to_str(char *base, char *str)
 {

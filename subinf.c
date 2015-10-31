@@ -5,11 +5,11 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Fri Oct 30 21:38:14 2015 Antoine Baché
-** Last update Sat Oct 31 21:43:45 2015 Antoine Baché
+** Last update Sun Nov  1 00:58:56 2015 Antoine Baché
 */
 
 #include "include/my.h"
-#include "include/foo.h"
+#include "include/my_struct.h"
 
 char    *sub_calc(char *n1, char *n2, char *res, int base)
 {

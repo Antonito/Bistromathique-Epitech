@@ -5,10 +5,10 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 20 09:57:16 2015 ludovic petrenko
-** Last update Fri Oct 30 20:03:18 2015 Antoine Baché
+** Last update Sun Nov  1 00:57:08 2015 Antoine Baché
 */
 
-#include "include/foo.h"
+#include "include/my_struct.h"
 
 int	nb_length(char *str, char *base)
 {

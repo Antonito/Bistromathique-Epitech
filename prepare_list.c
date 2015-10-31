@@ -5,11 +5,11 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 20 10:26:08 2015 ludovic petrenko
-** Last update Sat Oct 31 13:54:16 2015 Antoine Baché
+** Last update Sun Nov  1 00:58:12 2015 Antoine Baché
 */
 
 #include <stdlib.h>
-#include "include/foo.h"
+#include "include/my_struct.h"
 
 t_list		*prepare_list(char *base, int base_length, char *ops)
 {

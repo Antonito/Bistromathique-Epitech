@@ -5,12 +5,12 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 20 10:16:54 2015 ludovic petrenko
-** Last update Sat Oct 31 13:54:44 2015 Antoine Baché
+** Last update Sun Nov  1 00:59:11 2015 Antoine Baché
 */
 
 #include <stdlib.h>
 #include "include/my.h"
-#include "include/foo.h"
+#include "include/my_struct.h"
 
 t_token		*tokenise(char *str, int type, int priority, char sign)
 {

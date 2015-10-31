@@ -5,12 +5,12 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 20 09:49:34 2015 ludovic petrenko
-** Last update Sat Oct 31 13:53:44 2015 Antoine Baché
+** Last update Sun Nov  1 00:56:47 2015 Antoine Baché
 */
 
 #include <stdlib.h>
 #include "include/my.h"
-#include "include/foo.h"
+#include "include/my_struct.h"
 
 char	*my_strndup(char *src, int n)
 {

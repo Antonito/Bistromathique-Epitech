@@ -5,11 +5,11 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Fri Oct 23 13:26:12 2015 ludovic petrenko
-** Last update Sat Oct 31 05:54:34 2015 Antoine Baché
+** Last update Sun Nov  1 00:54:06 2015 Antoine Baché
 */
 
 #include "include/my.h"
-#include "include/foo.h"
+#include "include/my_struct.h"
 
 void	check_doublon(char *str)
 {

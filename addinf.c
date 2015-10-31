@@ -5,12 +5,12 @@
 ** Login   <arnaud_e@epitech.net>
 ** 
 ** Started on  Mon Oct 19 09:59:53 2015 arthur arnaud
-** Last update Sat Oct 31 21:49:33 2015 Antoine Baché
+** Last update Sun Nov  1 00:52:12 2015 Antoine Baché
 */
 
 #include <stdlib.h>
 #include "include/my.h"
-#include "include/foo.h"
+#include "include/my_struct.h"
 
 int	value(char *nb, int i)
 {
