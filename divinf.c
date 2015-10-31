@@ -5,7 +5,7 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Fri Oct 30 22:56:50 2015 Antoine Baché
-** Last update Sat Oct 31 20:14:47 2015 Antoine Baché
+** Last update Sat Oct 31 23:43:04 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -27,7 +27,6 @@ char	*retract_div(char *nb3)
 
 char	*expand_div(char *nb1, char *nb2)
 {
-  char	*res;
   char	*nb3;
   int	i;
 
@@ -40,7 +39,7 @@ char	*expand_div(char *nb1, char *nb2)
       nb3[i] = 1;
       i = i + 1;
     }
-  nb3[i + 1] = 0;
+  nb3[i] = 0;
   i = my_strlen(nb2) - 1;
   while (i >= 0)
     {
@@ -78,6 +77,7 @@ char	*div_calc(char *nb1, char *nb2, int base)
       j = j + 1;
     }
   res[j] = 0;
+  free(nb3);
   return (res);
 }
 

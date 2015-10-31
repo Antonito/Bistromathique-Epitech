@@ -5,19 +5,25 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 20 09:37:53 2015 ludovic petrenko
-** Last update Sat Oct 31 22:23:55 2015 Antoine Baché
+** Last update Sat Oct 31 23:16:18 2015 Antoine Baché
 */
 
 #include <stdlib.h>
 #include "include/my.h"
 #include "include/foo.h"
 
-void	check_valid_list(t_list *list)
+void		check_valid_list(t_list *list)
 {
+  t_token	*tmp;
+
   if (list->level != 0)
     my_error(SYNTAXE_ERROR_MSG);
   if (list->first->type == 3)
-    list->first = list->first->next;
+    {
+      tmp = list->first;
+      list->first = list->first->next;
+      free_token(tmp);
+    }
   else if (list->first->type > 1)
     my_error(SYNTAXE_ERROR_MSG);
   if (list->last->type > 0 && list->last->type != list->ops[1])

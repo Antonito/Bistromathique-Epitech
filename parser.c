@@ -5,7 +5,7 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Tue Oct 20 13:11:12 2015 Antoine Baché
-** Last update Sat Oct 31 13:54:00 2015 Antoine Baché
+** Last update Sat Oct 31 23:23:48 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -18,7 +18,7 @@ void	add_stack(t_token **stack, t_token *token)
   *stack = token;
 }
 
-void	prioprs(t_token **stack, t_token *token, t_list *st_list)
+void		prioprs(t_token **stack, t_token *token, t_list *st_list)
 {
   t_token	*tmp2;
 

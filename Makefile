@@ -5,7 +5,7 @@
 ## Login   <bache_a@epitech.net>
 ## 
 ## Started on  Fri Oct 30 20:05:42 2015 Antoine Baché
-## Last update Sat Oct 31 22:19:23 2015 Antoine Baché
+## Last update Sun Nov  1 00:04:19 2015 Antoine Baché
 ##
 
 
@@ -45,8 +45,10 @@ RM=	rm -f
 
 OBJ=	$(SRC:.c=.o)
 
+#CFLAGS= -W -Wall -Werror -Wformat -Wformat-security -Wformat-nonliteral -Wformat=2 -ftrapv -Wextra -Wcast-align -Wunreachable-code -Wfloat-equal -ansi -pedantic
+
 $(NAME):	$(OBJ)
-	$(CC) $(OBJ) -o $(NAME) -lmy -Llib
+	$(CC) $(OBJ) -o $(NAME) -lmy -Llib $(CFLAGS)
 
 all: 	$(NAME)
 
