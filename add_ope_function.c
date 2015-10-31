@@ -5,7 +5,7 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 20 14:05:52 2015 ludovic petrenko
-** Last update Fri Oct 30 19:55:02 2015 Antoine Baché
+** Last update Sat Oct 31 05:55:51 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -39,20 +39,20 @@ int		ope_only(t_list *list, char *str)
     {
       list->level = list->level + 1;
       if (u == 2 || u > 4)
-	my_error(SYNTAX_ERROR_MSG);
+	my_error(SYNTAXE_ERROR_MSG);
     }
   else if (t == 2)
     {
       list->level = list->level - 1;
       if (list->level < 0 || (u < 2 && str[1] != 0))
-	my_error(SYNTAX_ERROR_MSG);
+	my_error(SYNTAXE_ERROR_MSG);
     }
   else
     {
       token = tokenise(NULL, t, priority(list, str[0]), 0);
       add_to_list(list, token);
       if (u > 4 || u == 2)
-	my_error(SYNTAX_ERROR_MSG);
+	my_error(SYNTAXE_ERROR_MSG);
     }
   if (u == 3 || u == 4)
     {
@@ -106,7 +106,7 @@ int		unary(t_list *list, char *str)
   else if (is_in_str(str[i], list->base))
     n = add_nbr(list, str + i, s);
   else
-    my_error(SYNTAX_ERROR_MSG);
+    my_error(SYNTAXE_ERROR_MSG);
   n = n + i;
   return (n);
 }

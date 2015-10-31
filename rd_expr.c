@@ -5,7 +5,7 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Fri Oct 23 14:31:55 2015 ludovic petrenko
-** Last update Fri Oct 30 20:04:51 2015 Antoine Baché
+** Last update Sat Oct 31 05:58:09 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -32,6 +32,6 @@ char	*rd_expr(char *read_size_str)
   if (str[ret - 1] == '\n')
     str[ret - 1] = '\0';
   if (my_strlen(str) == 0)
-    my_error(ERROR_MSG);
+    my_error(SYNTAXE_ERROR_MSG);
   return (str);
 }

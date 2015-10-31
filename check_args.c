@@ -5,7 +5,7 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Fri Oct 23 13:26:12 2015 ludovic petrenko
-** Last update Fri Oct 30 19:56:34 2015 Antoine Baché
+** Last update Sat Oct 31 05:54:34 2015 Antoine Baché
 */
 
 #include "include/my.h"
@@ -23,7 +23,7 @@ void	check_doublon(char *str)
       while (i < n)
 	{
 	  if (str[0] == str[i])
-	    my_error(ERROR_MSG);
+	    my_error(SYNTAXE_ERROR_MSG);
 	  i = i + 1;
 	}
       str = str + 1;
@@ -39,7 +39,7 @@ void	check_args(char **av)
   i = 0;
   e = 0;
   if (my_strlen(av[2]) != 7 || my_strlen(av[1]) < 2)
-      my_error(ERROR_MSG);
+      my_error(SYNTAXE_ERROR_MSG);
   while (av[1][i] && !e)
     {
       j = 0;
@@ -52,7 +52,7 @@ void	check_args(char **av)
       i = i + 1;
     }
   if (e != 0)
-      my_error(ERROR_MSG);
+      my_error(SYNTAXE_ERROR_MSG);
   check_doublon(av[1]);
   check_doublon(av[2]);
 }

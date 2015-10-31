@@ -5,7 +5,7 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 20 09:37:53 2015 ludovic petrenko
-** Last update Fri Oct 30 20:01:13 2015 Antoine Baché
+** Last update Sat Oct 31 05:57:31 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -16,13 +16,13 @@
 void	check_valid_list(t_list *list)
 {
   if (list->level != 0)
-    my_error(SYNTAX_ERROR_MSG);
+    my_error(SYNTAXE_ERROR_MSG);
   if (list->first->type == 3)
     list->first = list->first->next;
   else if (list->first->type > 1)
-    my_error(SYNTAX_ERROR_MSG);
+    my_error(SYNTAXE_ERROR_MSG);
   if (list->last->type > 0 && list->last->type != list->ops[1])
-    my_error(SYNTAX_ERROR_MSG);
+    my_error(SYNTAXE_ERROR_MSG);
 }
 
 t_list	*lexer(char *expr, char *base, char *ops)

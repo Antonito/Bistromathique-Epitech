@@ -5,7 +5,7 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Fri Oct 30 20:06:14 2015 Antoine Baché
-** Last update Fri Oct 30 23:59:33 2015 Antoine Baché
+** Last update Sat Oct 31 05:51:49 2015 Antoine Baché
 */
 
 
@@ -14,7 +14,7 @@
 #ifndef FOO_H_
 # define FOO_H_
 
-# define SYNTAX_ERROR_MSG ("Syntax error")
+# define SYNTAXE_ERROR_MSG ("Syntax error")
 # define ERROR_MSG ("Error")
 
 char		*add_calc(char *n1, char *n2, char *res, int base);
