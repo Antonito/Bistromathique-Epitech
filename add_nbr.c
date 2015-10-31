@@ -5,10 +5,9 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 27 02:28:46 2015 ludovic petrenko
-** Last update Sat Oct 31 05:55:15 2015 Antoine Baché
+** Last update Sat Oct 31 13:50:52 2015 Antoine Baché
 */
 
-#include "include/my_struct.h"
 #include "include/foo.h"
 
 int		add_nbr(t_list *list, char *str, char sign)

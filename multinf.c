@@ -5,13 +5,12 @@
 ** Login   <arnaud_e@epitech.net>
 ** 
 ** Started on  Thu Oct 22 18:40:42 2015 arthur arnaud
-** Last update Fri Oct 30 20:02:08 2015 Antoine Baché
+** Last update Sat Oct 31 13:53:24 2015 Antoine Baché
 */
 
 #include <stdlib.h>
 #include "include/my.h"
 #include "include/foo.h"
-#include "include/my_struct.h"
 
 char	*mult_calc(int base, char *n1, char *n2, char *res)
 {

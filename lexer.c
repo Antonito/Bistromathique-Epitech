@@ -5,11 +5,10 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 20 09:37:53 2015 ludovic petrenko
-** Last update Sat Oct 31 06:01:48 2015 Antoine Baché
+** Last update Sat Oct 31 13:52:54 2015 Antoine Baché
 */
 
 #include <stdlib.h>
-#include "include/my_struct.h"
 #include "include/my.h"
 #include "include/foo.h"
 

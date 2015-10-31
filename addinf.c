@@ -5,12 +5,11 @@
 ** Login   <arnaud_e@epitech.net>
 ** 
 ** Started on  Mon Oct 19 09:59:53 2015 arthur arnaud
-** Last update Fri Oct 30 23:25:58 2015 Antoine Baché
+** Last update Sat Oct 31 21:49:33 2015 Antoine Baché
 */
 
 #include <stdlib.h>
 #include "include/my.h"
-#include "include/my_struct.h"
 #include "include/foo.h"
 
 int	value(char *nb, int i)
@@ -94,7 +93,7 @@ int	my_cmp(char *n1, char *n2)
     return (1);
   else if (my_strlen(n1) < my_strlen(n2))
     return (0);
-  if (my_strcmp(n1,n2) >= 0)
+  if (my_strcmp(n1, n2) >= 0)
     return (1);
   return (0);
 }

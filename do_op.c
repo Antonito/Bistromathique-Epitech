@@ -5,11 +5,10 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Wed Oct 28 14:54:36 2015 ludovic petrenko
-** Last update Sat Oct 31 00:02:36 2015 Antoine Baché
+** Last update Sat Oct 31 21:49:06 2015 Antoine Baché
 */
 
 #include <stdlib.h>
-#include "include/my_struct.h"
 #include "include/my.h"
 #include "include/foo.h"
 
@@ -17,9 +16,8 @@ void	set_op(void (**tab)(t_token*, t_token*, int))
 {
   tab[0] = &infinadd;
   tab[2] = &multinf;
-  //  tab[3] = &divinf;
+  tab[3] = &divinf;
   tab[4] = &modinf;
-  //  tab[5] = &powinf;
 }
 
 void		do_op(t_token **stack, t_token *op, int base)
@@ -36,6 +34,8 @@ void		do_op(t_token **stack, t_token *op, int base)
   token1 = (*stack)->next;
   ope[op->type - 3](token1, token2, base);
   clear_zero(token1->data);
+  if (token1->data[0] == 1 && token1->data[1] == 0)
+    token1->sign = 1;
   free_token(token2);
   free(op);
   *stack = token1;

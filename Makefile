@@ -5,7 +5,7 @@
 ## Login   <bache_a@epitech.net>
 ## 
 ## Started on  Fri Oct 30 20:05:42 2015 Antoine Baché
-## Last update Sat Oct 31 00:26:41 2015 Antoine Baché
+## Last update Sat Oct 31 22:19:23 2015 Antoine Baché
 ##
 
 
@@ -44,8 +44,6 @@ CC=	cc
 RM=	rm -f
 
 OBJ=	$(SRC:.c=.o)
-
-#CFLAGS= -W -Wall -Werror -Wformat -Wformat-security -Wformat-nonliteral -Wformat=2 -Wno-format-extra-args -g
 
 $(NAME):	$(OBJ)
 	$(CC) $(OBJ) -o $(NAME) -lmy -Llib

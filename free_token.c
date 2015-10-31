@@ -5,11 +5,11 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Wed Oct 28 19:36:02 2015 ludovic petrenko
-** Last update Fri Oct 30 19:59:56 2015 Antoine Baché
+** Last update Sat Oct 31 13:52:31 2015 Antoine Baché
 */
 
 #include <stdlib.h>
-#include "include/my_struct.h"
+#include "include/foo.h"
 
 void	free_token(t_token *token)
 {

@@ -5,11 +5,10 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Tue Oct 20 13:11:12 2015 Antoine Baché
-** Last update Fri Oct 30 20:03:42 2015 Antoine Baché
+** Last update Sat Oct 31 13:54:00 2015 Antoine Baché
 */
 
 #include <stdlib.h>
-#include "include/my_struct.h"
 #include "include/my.h"
 #include "include/foo.h"
 
