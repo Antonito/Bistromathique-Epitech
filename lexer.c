@@ -5,7 +5,7 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 20 09:37:53 2015 ludovic petrenko
-** Last update Sat Oct 31 05:57:31 2015 Antoine Baché
+** Last update Sat Oct 31 06:01:48 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -39,7 +39,7 @@ t_list	*lexer(char *expr, char *base, char *ops)
       else if (is_in_str(*expr, ops))
 	n = add_ope(lex, expr);
       else
-	my_error(ERROR_MSG);
+	my_error(SYNTAXE_ERROR_MSG);
       expr = expr + n;
     }
   check_valid_list(lex);
