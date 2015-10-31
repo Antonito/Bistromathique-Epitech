@@ -5,7 +5,7 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 20 09:37:53 2015 ludovic petrenko
-** Last update Sat Oct 31 13:52:54 2015 Antoine Baché
+** Last update Sat Oct 31 22:23:55 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -24,10 +24,10 @@ void	check_valid_list(t_list *list)
     my_error(SYNTAXE_ERROR_MSG);
 }
 
-t_list	*lexer(char *expr, char *base, char *ops)
+t_list		*lexer(char *expr, char *base, char *ops)
 {
-  int	n;
-  t_list *lex;
+  int		n;
+  t_list	*lex;
 
   lex = prepare_list(base, my_strlen(base), ops);
   n = 0;
