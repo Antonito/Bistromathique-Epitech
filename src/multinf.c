@@ -5,16 +5,16 @@
 ** Login   <arnaud_e@epitech.net>
 ** 
 ** Started on  Thu Oct 22 18:40:42 2015 arthur arnaud
-** Last update Sun Nov  1 23:04:46 2015 Antoine Baché
+** Last update Sun Nov  1 23:38:08 2015 Antoine Baché
 */
 
 #include "../include/my_struct.h"
 
 char	*mult_calc(int base, char *n1, char *n2, char *res)
 {
-  int   i;
-  int   j;
-  int   tmp;
+  int	i;
+  int	j;
+  int	tmp;
 
   i = my_strlen(n2);
   while (i > 0)
