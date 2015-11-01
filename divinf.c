@@ -5,7 +5,7 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Fri Oct 30 22:56:50 2015 Antoine Baché
-** Last update Sun Nov  1 16:44:55 2015 Antoine Baché
+** Last update Sun Nov  1 16:56:14 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -98,10 +98,10 @@ void	divinf(t_token *t1, t_token *t2, int base)
     {
       free(res);
       res = div_bigger(t1->data, t2->data);
+      free(t1->data);
     }
   else
     res = div_calc(t1->data, t2->data, base, i);
   t1->sign = t1->sign * t2->sign;
-  free(t1->data);
   t1->data = res;
 }
