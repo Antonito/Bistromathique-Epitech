@@ -5,7 +5,7 @@
 ** Login   <arnaud_e@epitech.net>
 ** 
 ** Started on  Thu Oct 22 18:40:42 2015 arthur arnaud
-** Last update Sun Nov  1 00:56:18 2015 Antoine Baché
+** Last update Sun Nov  1 04:31:15 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -14,28 +14,22 @@
 
 char	*mult_calc(int base, char *n1, char *n2, char *res)
 {
-  int	l;
-  int	k;
-  int	j;
-  int	i;
+  int   i;
+  int   j;
+  int   tmp;
 
-  i = my_strlen(n1);
-  j = my_strlen(n2);
-  l = 0;
+  i = my_strlen(n2);
   while (i > 0)
     {
-      k = my_strlen(n1) + my_strlen(n2);
+      j = my_strlen(n1);
       while (j > 0)
-	{
-	  res[k - l] += (n1[i - 1] - 1) * (n2[j - 1] - 1);
-	  res[(k - l) - 1] += (res[k - l] - 1) / base;
-	  res[k - l] = ((res[k - l] - 1) % base) + 1;
-	  j = j - 1;
-	  k = k - 1;
-	}
-      j = my_strlen(n2);
+        {
+          tmp = res[i + j] + (n1[j - 1] - 1) * (n2[i - 1] - 1) - 1;
+          res[i + j - 1] += tmp / base;
+          res[i + j] = (tmp % base) + 1;
+          j = j - 1;
+        }
       i = i - 1;
-      l = l + 1;
     }
   return (res);
 }
