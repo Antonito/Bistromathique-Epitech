@@ -5,15 +5,17 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Fri Oct 30 20:06:14 2015 Antoine Baché
-** Last update Sun Nov  1 23:13:46 2015 Antoine Baché
+** Last update Sun Nov  1 23:22:48 2015 Antoine Baché
 */
 
 #ifndef MY_STRUCT_H_
 # define MY_STRUCT_H_
-# define SYNTAXE_ERROR_MSG ("Syntax error")
-# define ERROR_MSG ("Error")
+
 # include <unistd.h>
 # include <stdlib.h>
+
+# define SYNTAXE_ERROR_MSG ("Syntax error")
+# define ERROR_MSG ("Error")
 
 typedef struct		s_token
 {
