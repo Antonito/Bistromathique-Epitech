@@ -5,7 +5,7 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 20 14:05:52 2015 ludovic petrenko
-** Last update Sun Nov  1 20:28:21 2015 Antoine Baché
+** Last update Sun Nov  1 20:42:59 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -36,7 +36,7 @@ int		ope_only(t_list *list, char *str)
   if (t == 1 || t == 2)
     ope_function(list, str, t, u);
   else
-    ope_funct_else(list, t, u);
+    ope_funct_other(list, t, u);
   if (u == 3 || u == 4)
     {
       if (t == 2)
@@ -49,21 +49,24 @@ int		ope_only(t_list *list, char *str)
   return (n);
 }
 
-void		unary_parenthesis(t_list *list)
+void		unary_parenthesis(t_list *list, int s)
 {
   char		*token_str;
   t_token	*token;
   t_token	*mult;
 
-  token_str = malloc(2);
-  if (token_str == NULL)
-    my_error(ERROR_MSG);
-  token_str[1] = 0;
-  token_str[0] = 2;
-  token = tokenise(token_str, 0, 0, -1);
-  add_to_list(list, token);
-  mult = tokenise(NULL, 5, priority(list, list->ops[4]) + 1, 0);
-  add_to_list(list, mult);
+  if (s == -1)
+    {
+      token_str = malloc(2);
+      if (token_str == NULL)
+	my_error(ERROR_MSG);
+      token_str[1] = 0;
+      token_str[0] = 2;
+      token = tokenise(token_str, 0, 0, -1);
+      add_to_list(list, token);
+      mult = tokenise(NULL, 5, priority(list, list->ops[4]) + 1, 0);
+      add_to_list(list, mult);
+    }
 }
 
 int		unary(t_list *list, char *str)
@@ -82,8 +85,7 @@ int		unary(t_list *list, char *str)
       i = i + 1;
     }
   if (str[i] == list->ops[0])
-    if (s == -1)
-      unary_parenthesis(list);
+    unary_parenthesis(list, s);
   else if (is_in_str(str[i], list->base))
     n = add_nbr(list, str + i, s);
   else

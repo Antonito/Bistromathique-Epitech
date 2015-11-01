@@ -5,7 +5,7 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Sun Nov  1 15:54:04 2015 Antoine Baché
-** Last update Sun Nov  1 20:19:47 2015 Antoine Baché
+** Last update Sun Nov  1 20:43:21 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -27,7 +27,7 @@ void	ope_function(t_list *list, char *str, int t, int u)
     }
 }
 
-void		ope_funct_else(t_list *list, int t, int u)
+void		ope_funct_other(t_list *list, int t, int u)
 {
   t_token	*token;
 

@@ -5,14 +5,14 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Sun Nov  1 16:34:34 2015 Antoine Baché
-** Last update Sun Nov  1 16:44:58 2015 Antoine Baché
+** Last update Sun Nov  1 20:41:54 2015 Antoine Baché
 */
 
 #include <stdlib.h>
 #include "include/my.h"
 #include "include/my_struct.h"
 
-void	div_calc_while(char *nb1, char *nb2, char *res, int base)
+void	div_calc_next(char *nb1, char *nb2, char *res, int base)
 {
   int	i;
   int	j;

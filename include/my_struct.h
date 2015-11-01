@@ -5,7 +5,7 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Fri Oct 30 20:06:14 2015 Antoine Baché
-** Last update Sun Nov  1 20:20:37 2015 Antoine Baché
+** Last update Sun Nov  1 20:42:35 2015 Antoine Baché
 */
 
 #ifndef MY_STRUCT_H_
@@ -47,7 +47,7 @@ void	check_args(char **av);
 void	check_doublon(char *str);
 void	check_mod(char *nb1, char *nb2, char *res);
 void	check_valid_list(t_list *list);
-void	div_calc_while(char *nb1, char *nb2, char *res, int base);
+void	div_calc_next(char *nb1, char *nb2, char *res, int base);
 char	*div_calc(char *nb1, char *nb2, int base, int i);
 void	divinf(t_token *t1, t_token *t2, int base);
 char	*div_bigger(char *nb1, char *nb2);
@@ -72,7 +72,7 @@ char	*my_strdup(char *src);
 char	*my_strndup(char *src, int n);
 char	*negative(char *str, int s, int *n);
 int	nb_length(char *str, char *base);
-void	ope_funct_else(t_list *list, int t, int u);
+void	ope_funct_other(t_list *list, int t, int u);
 void	ope_function(t_list *list, char *str, int t, int u);
 int	ope_only(t_list *list, char *str);
 void	parser(t_list *list);
@@ -87,7 +87,7 @@ void	str_to_base(char *base, char *str);
 char	*sub_calc(char *n1, char *n2, char *res, int base);
 t_token	*tokenise(char *str, int type, int priority, char sign);
 int	unary(t_list *list, char *str);
-void	unary_parenthesis(t_list *list);
+void	unary_parenthesis(t_list *list, int s);
 int	value(char *nb, int i);
 
 #endif /* !MY_STRUCT_H_ */

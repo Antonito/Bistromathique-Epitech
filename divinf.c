@@ -5,7 +5,7 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Fri Oct 30 22:56:50 2015 Antoine Baché
-** Last update Sun Nov  1 20:22:07 2015 Antoine Baché
+** Last update Sun Nov  1 20:41:39 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -57,7 +57,7 @@ char	*div_calc(char *nb1, char *nb2, int base, int i)
 
   if ((res = malloc(my_strlen(nb1) + 1)) == NULL)
     my_error(ERROR_MSG);
-  div_calc_while(nb1, nb2, res, base);
+  div_calc_next(nb1, nb2, res, base);
   return (res);
 }
 
