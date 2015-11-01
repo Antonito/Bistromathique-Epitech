@@ -5,7 +5,7 @@
 ## Login   <bache_a@epitech.net>
 ## 
 ## Started on  Fri Oct 30 20:05:42 2015 Antoine Baché
-## Last update Sun Nov  1 16:54:59 2015 Antoine Baché
+## Last update Sun Nov  1 19:49:06 2015 Antoine Baché
 ##
 
 
@@ -41,7 +41,7 @@ NAME=	calc
 
 HEADER=	my.h
 
-CC=	cc -g
+CC=	cc
 
 RM=	rm -f
 

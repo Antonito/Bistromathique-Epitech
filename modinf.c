@@ -5,7 +5,7 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Fri Oct 30 22:21:25 2015 Antoine Baché
-** Last update Sun Nov  1 01:09:31 2015 Antoine Baché
+** Last update Sun Nov  1 19:34:04 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -46,12 +46,14 @@ void	modinf(t_token *t1, t_token *t2, int base)
   int	i;
   char	*res;
   char	*tmp;
+  char	*tmp2;
 
   if (t2->data[0] == 1 && my_strlen(t2->data) == 1)
     my_error(ERROR_MSG);
   else if (my_cmp(t1->data, t2->data) == 1)
     {
-      tmp = div_calc(t1->data, t2->data, base, i);
+      tmp2 = my_strdup(t1->data);
+      tmp = div_calc(tmp2, t2->data, base, i);
       clear_zero(tmp);
       res = mult_calc(base, tmp, t2->data, init_mod(t2->data, tmp));
       free(tmp);

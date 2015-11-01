@@ -5,14 +5,14 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 20 09:32:37 2015 ludovic petrenko
-** Last update Sun Nov  1 18:25:30 2015 Antoine Baché
+** Last update Sun Nov  1 18:49:26 2015 Antoine Baché
 */
 
 #include <stdlib.h>
 #include "include/my.h"
 #include "include/my_struct.h"
 
-int	bistro(char **av)
+int		bistro(char **av)
 {
   char		*expr;
   t_list	*parse;
