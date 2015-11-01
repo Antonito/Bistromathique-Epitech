@@ -5,7 +5,7 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Sun Nov  1 16:34:34 2015 Antoine Baché
-** Last update Sun Nov  1 23:04:01 2015 Antoine Baché
+** Last update Sun Nov  1 23:40:02 2015 Antoine Baché
 */
 
 #include "../include/my_struct.h"
@@ -23,7 +23,7 @@ void	div_calc_next(char *nb1, char *nb2, char *res, int base)
     {
       i = 0;
       while ((my_strlen(nb3) == my_strlen(nb1) && my_strcmp(nb3, nb1) <= 0) ||
-             (my_strlen(nb3) < my_strlen(nb1) && my_strcmp(nb3, nb1) > 0))
+	     (my_strlen(nb3) < my_strlen(nb1) && my_strcmp(nb3, nb1) > 0))
         {
 	  tmp = nb1;
           nb1 = sub_calc(nb1, nb3, init(nb1, nb3), base);
