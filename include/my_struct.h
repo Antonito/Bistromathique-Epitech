@@ -5,7 +5,7 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Fri Oct 30 20:06:14 2015 Antoine Baché
-** Last update Sun Nov  1 16:43:15 2015 Antoine Baché
+** Last update Sun Nov  1 18:10:17 2015 Antoine Baché
 */
 
 #ifndef MY_STRUCT_H_
@@ -54,6 +54,7 @@ char	*div_bigger(char *nb1, char *nb2);
 void	do_op(t_token **stack, t_token *op, int base,
 	      void (**ope)(t_token*, t_token*, int));
 char	*expand_div(char *nb1, char *nb2);
+void	free_list(t_list *list);
 void	free_token(t_token *token);
 void	infinadd(t_token *t1, t_token *t2, int base);
 char	*init(char *n1, char *n2);

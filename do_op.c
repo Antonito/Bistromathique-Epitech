@@ -5,7 +5,7 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Wed Oct 28 14:54:36 2015 ludovic petrenko
-** Last update Sun Nov  1 05:07:54 2015 Antoine Baché
+** Last update Sun Nov  1 18:10:31 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -33,7 +33,7 @@ void		do_op(t_token **stack, t_token *op, int base,
   if (token1->data[0] == 1 && token1->data[1] == 0)
     token1->sign = 1;
   free_token(token2);
-  free(op);
+  free_token(op);
   *stack = token1;
 }
 

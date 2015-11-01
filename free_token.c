@@ -5,7 +5,7 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Wed Oct 28 19:36:02 2015 ludovic petrenko
-** Last update Sun Nov  1 00:54:51 2015 Antoine Baché
+** Last update Sun Nov  1 18:09:48 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -13,6 +13,21 @@
 
 void	free_token(t_token *token)
 {
-  free(token->data);
+  if (token->type == 0)
+    free(token->data);
   free(token);
+}
+
+void		free_list(t_list *list)
+{
+  t_token	*token;
+  t_token	*tmp;
+
+  token = list->first;
+  while (token != NULL)
+    {
+      tmp = token->next;
+      free_token(token);
+      token = tmp;
+    }
 }
