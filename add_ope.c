@@ -5,7 +5,7 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 20 10:31:44 2015 ludovic petrenko
-** Last update Sun Nov  1 00:52:43 2015 Antoine Baché
+** Last update Sun Nov  1 18:28:47 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -29,7 +29,5 @@ int		add_ope(t_list *list, char *str)
     {
       n = ope_only(list, str);
     }
-  else
-    my_error(ERROR_MSG);
   return (n);
 }

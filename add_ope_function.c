@@ -5,7 +5,7 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 20 14:05:52 2015 ludovic petrenko
-** Last update Sun Nov  1 15:57:41 2015 Antoine Baché
+** Last update Sun Nov  1 18:33:46 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -90,7 +90,10 @@ int		unary(t_list *list, char *str)
   else if (is_in_str(str[i], list->base))
     n = add_nbr(list, str + i, s);
   else
-    my_error(SYNTAXE_ERROR_MSG);
+    {
+      free_list(list);
+      my_error(SYNTAXE_ERROR_MSG);
+    }
   n = n + i;
   return (n);
 }

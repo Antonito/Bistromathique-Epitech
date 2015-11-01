@@ -5,7 +5,7 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Wed Oct 28 19:36:02 2015 ludovic petrenko
-** Last update Sun Nov  1 18:09:48 2015 Antoine Baché
+** Last update Sun Nov  1 18:24:03 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -30,4 +30,5 @@ void		free_list(t_list *list)
       free_token(token);
       token = tmp;
     }
+  free(list);
 }

@@ -5,7 +5,7 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 27 02:28:46 2015 ludovic petrenko
-** Last update Sun Nov  1 00:52:27 2015 Antoine Baché
+** Last update Sun Nov  1 18:30:50 2015 Antoine Baché
 */
 
 #include "include/my_struct.h"
@@ -22,7 +22,10 @@ int		add_nbr(t_list *list, char *str, char sign)
   token = tokenise(token_str, 0, 0, sign);
   add_to_list(list, token);
   if (str[n] == list->ops[0])
-    my_error(SYNTAXE_ERROR_MSG);
+    {
+      free_list(list);
+      my_error(SYNTAXE_ERROR_MSG);
+    }
   clear_zero(token->data);
   return (n);
 }

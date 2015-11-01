@@ -5,7 +5,7 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 20 09:32:37 2015 ludovic petrenko
-** Last update Sun Nov  1 00:53:48 2015 Antoine Baché
+** Last update Sun Nov  1 18:25:30 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -20,7 +20,6 @@ int	bistro(char **av)
 
   expr = rd_expr(av[3]);
   parse = lexer(expr, av[1], av[2]);
-  free(expr);
   parser(parse);
   result = calc(parse);
   base_to_str(av[1], result->data);
