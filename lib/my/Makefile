@@ -5,7 +5,7 @@
 ## Login   <petren_l@epitech.net>
 ## 
 ## Started on  Mon Oct 12 10:01:59 2015 ludovic petrenko
-## Last update Fri Oct 30 21:23:08 2015 Antoine Baché
+## Last update Sun Nov  1 21:58:53 2015 Antoine Baché
 ##
 
 SRC=	my_putchar.c \
@@ -31,14 +31,14 @@ RM=	rm -f
 
 OBJ=	$(SRC:.c=.o)
 
-all: 	$(LIB)
-
 $(LIB):	$(OBJ)
 	$(CC) -c $(SRC)
 	ar rc $(LIB) $(OBJ)
 	ranlib $(LIB)
 	cp $(LIB) ..
 	cp $(HEADER) ../../include
+
+all: 	$(LIB)
 
 clean:
 	$(RM) $(OBJ)
