@@ -5,7 +5,7 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Fri Oct 30 22:56:50 2015 Antoine Baché
-** Last update Sun Nov  1 00:54:25 2015 Antoine Baché
+** Last update Sun Nov  1 01:09:28 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -51,9 +51,8 @@ char	*expand_div(char *nb1, char *nb2)
   return (nb3);
 }
 
-char	*div_calc(char *nb1, char *nb2, int base)
+char	*div_calc(char *nb1, char *nb2, int base, int i)
 {
-  int	i;
   int	j;
   char	*res;
   char	*nb3;
@@ -104,6 +103,7 @@ char	*div_bigger(char *nb1, char *nb2)
 
 void	divinf(t_token *t1, t_token *t2, int base)
 {
+  int	i;
   char	*res;
 
   if ((res = malloc(my_strlen(t1->data) + 1)) == NULL)
@@ -115,7 +115,7 @@ void	divinf(t_token *t1, t_token *t2, int base)
 	   (my_strcmp(t1->data, t2->data) == 0))
     res = div_bigger(t1->data, t2->data);
   else
-    res = div_calc(t1->data, t2->data, base);
+    res = div_calc(t1->data, t2->data, base, i);
   t1->sign = t1->sign * t2->sign;
   t1->data = res;
 }

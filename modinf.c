@@ -5,7 +5,7 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Fri Oct 30 22:21:25 2015 Antoine Baché
-** Last update Sun Nov  1 00:55:58 2015 Antoine Baché
+** Last update Sun Nov  1 01:09:31 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -43,6 +43,7 @@ void	check_mod(char *nb1, char *nb2, char *res)
 
 void	modinf(t_token *t1, t_token *t2, int base)
 {
+  int	i;
   char	*res;
   char	*tmp;
 
@@ -50,7 +51,7 @@ void	modinf(t_token *t1, t_token *t2, int base)
     my_error(ERROR_MSG);
   else if (my_cmp(t1->data, t2->data) == 1)
     {
-      tmp = div_calc(t1->data, t2->data, base);
+      tmp = div_calc(t1->data, t2->data, base, i);
       clear_zero(tmp);
       res = mult_calc(base, tmp, t2->data, init_mod(t2->data, tmp));
       free(tmp);
