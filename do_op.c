@@ -5,7 +5,7 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Wed Oct 28 14:54:36 2015 ludovic petrenko
-** Last update Sun Nov  1 00:54:38 2015 Antoine Baché
+** Last update Sun Nov  1 01:48:48 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -59,5 +59,6 @@ t_token		*calc(t_list *parse)
 	do_op(&stack, token, parse->base_length, ope);
       token = tmp;
     }
+  free(ope);
   return (stack);
 }
