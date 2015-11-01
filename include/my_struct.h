@@ -5,34 +5,35 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Fri Oct 30 20:06:14 2015 Antoine Baché
-** Last update Sun Nov  1 20:42:35 2015 Antoine Baché
+** Last update Sun Nov  1 23:13:46 2015 Antoine Baché
 */
 
 #ifndef MY_STRUCT_H_
 # define MY_STRUCT_H_
-
 # define SYNTAXE_ERROR_MSG ("Syntax error")
 # define ERROR_MSG ("Error")
+# include <unistd.h>
+# include <stdlib.h>
 
-typedef struct          s_token
+typedef struct		s_token
 {
-  char                  *data;
-  int                   type;
-  char                  sign;
-  int                   priority;
-  struct s_token        *next;
-}                       t_token;
+  char			*data;
+  int			type;
+  char			sign;
+  int			priority;
+  struct s_token	*next;
+}			t_token;
 
-typedef struct  s_list
+typedef struct		s_list
 {
-  int           level;
-  int           *(**calc)(int, int);
-  char          *base;
-  int           base_length;
-  char          *ops;
-  t_token       *first;
-  t_token       *last;
-}               t_list;
+  int			level;
+  int			*(**calc)(int, int);
+  char			*base;
+  int			base_length;
+  char			*ops;
+  t_token		*first;
+  t_token		*last;
+}			t_list;
 
 char	*add_calc(char *n1, char *n2, char *res, int base);
 int	add_nbr(t_list *list, char *str, char sign);
@@ -68,6 +69,18 @@ int	my_cmp(char *n1, char *n2);
 char	*my_divide(char *nb1, char *nb2, char *nb3);
 void	my_error(char *error_msg);
 void	my_aff_list(t_list *list);
+void    my_putchar(char c);
+void    my_putchar_err(char c);
+void    my_putstr(char *str);
+void    my_putstr_err(char *str);
+int     my_strlen(char *str);
+int     my_getnbr(char *str);
+char    *my_strcpy(char *dest, char *src);
+char    *my_strncpy(char *dest, char *src, int nb);
+int     my_strcmp(char *s1, char *s2);
+int     my_strncmp(char *s1, char *s2, int nb);
+char    *my_strcat(char *dest, char *src);
+char    *my_strncat(char *dest, char *src, int nb);
 char	*my_strdup(char *src);
 char	*my_strndup(char *src, int n);
 char	*negative(char *str, int s, int *n);
