@@ -5,7 +5,7 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 20 14:05:52 2015 ludovic petrenko
-** Last update Sun Nov  1 20:20:12 2015 Antoine Baché
+** Last update Sun Nov  1 20:28:21 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -82,10 +82,8 @@ int		unary(t_list *list, char *str)
       i = i + 1;
     }
   if (str[i] == list->ops[0])
-    {
-      if (s == -1)
-	unary_parenthesis(list);
-    }
+    if (s == -1)
+      unary_parenthesis(list);
   else if (is_in_str(str[i], list->base))
     n = add_nbr(list, str + i, s);
   else
