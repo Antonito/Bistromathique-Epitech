@@ -5,7 +5,7 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 20 14:05:52 2015 ludovic petrenko
-** Last update Sun Nov  1 23:02:46 2015 Antoine Baché
+** Last update Sun Nov  1 23:32:06 2015 Antoine Baché
 */
 
 #include "../include/my_struct.h"
@@ -67,11 +67,11 @@ void		unary_parenthesis(t_list *list, int s)
     }
 }
 
-int		unary(t_list *list, char *str)
+int	unary(t_list *list, char *str)
 {
-  int		i;
-  int		n;
-  char		s;
+  int	i;
+  int	n;
+  char	s;
 
   i = 0;
   n = 0;
