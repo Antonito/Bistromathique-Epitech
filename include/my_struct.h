@@ -5,7 +5,7 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Fri Oct 30 20:06:14 2015 Antoine Baché
-** Last update Sun Nov  1 15:59:07 2015 Antoine Baché
+** Last update Sun Nov  1 16:43:15 2015 Antoine Baché
 */
 
 #ifndef MY_STRUCT_H_
@@ -47,6 +47,7 @@ void	check_args(char **av);
 void	check_doublon(char *str);
 void	check_mod(char *nb1, char *nb2, char *res);
 void	check_valid_list(t_list *list);
+void	div_calc_while(char *nb1, char *nb2, char *res, int base);
 char	*div_calc(char *nb1, char *nb2, int base, int i);
 void	divinf(t_token *t1, t_token *t2, int base);
 char	*div_bigger(char *nb1, char *nb2);

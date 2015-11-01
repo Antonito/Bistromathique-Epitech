@@ -5,7 +5,7 @@
 ** Login   <arnaud_e@epitech.net>
 ** 
 ** Started on  Mon Oct 19 09:59:53 2015 arthur arnaud
-** Last update Sun Nov  1 01:14:14 2015 Antoine Baché
+** Last update Sun Nov  1 16:14:26 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -84,6 +84,7 @@ void	infinadd(t_token *t1, t_token *t2, int base)
       res = sub_calc(n2, n1, res, base);
       t1->sign = t2->sign;
     }
+  free(t1->data);
   t1->data = res;
 }
 

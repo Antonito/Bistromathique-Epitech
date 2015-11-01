@@ -5,7 +5,7 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Fri Oct 30 22:56:50 2015 Antoine Baché
-** Last update Sun Nov  1 01:09:28 2015 Antoine Baché
+** Last update Sun Nov  1 16:44:55 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -55,28 +55,10 @@ char	*div_calc(char *nb1, char *nb2, int base, int i)
 {
   int	j;
   char	*res;
-  char	*nb3;
 
   if ((res = malloc(my_strlen(nb1) + 1)) == NULL)
     my_error(ERROR_MSG);
-  nb3 = expand_div(nb1, nb2);
-  j = 0;
-  while (my_cmp(nb3, nb2) != 0)
-    {
-      i = 0;
-      while ((my_strlen(nb3) == my_strlen(nb1) && my_strcmp(nb3, nb1) <= 0) ||
-	     (my_strlen(nb3) < my_strlen(nb1) && my_strcmp(nb3, nb1) > 0))
-	{
-	  nb1 = sub_calc(nb1, nb3, init(nb1, nb3), base);
-	  clear_zero(nb1);
-	  i = i + 1;
-	}
-      nb3 = retract_div(nb3);
-      res[j] = i + 1;
-      j = j + 1;
-    }
-  res[j] = 0;
-  free(nb3);
+  div_calc_while(nb1, nb2, res, base);
   return (res);
 }
 
@@ -113,9 +95,13 @@ void	divinf(t_token *t1, t_token *t2, int base)
   else if (my_cmp(t1->data, t2->data) == 0 ||
 	   (t2->data[0] == 2 && my_strlen(t2->data) == 1) ||
 	   (my_strcmp(t1->data, t2->data) == 0))
-    res = div_bigger(t1->data, t2->data);
+    {
+      free(res);
+      res = div_bigger(t1->data, t2->data);
+    }
   else
     res = div_calc(t1->data, t2->data, base, i);
   t1->sign = t1->sign * t2->sign;
+  free(t1->data);
   t1->data = res;
 }

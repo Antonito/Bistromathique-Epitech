@@ -5,7 +5,7 @@
 ## Login   <bache_a@epitech.net>
 ## 
 ## Started on  Fri Oct 30 20:05:42 2015 Antoine Baché
-## Last update Sun Nov  1 15:59:58 2015 Antoine Baché
+## Last update Sun Nov  1 16:42:10 2015 Antoine Baché
 ##
 
 
@@ -20,6 +20,7 @@ SRC=	addinf.c \
 	clear_zero.c \
 	do_op.c \
 	divinf.c \
+	divinf_calc.c \
 	free_token.c \
 	is_in_str.c \
 	lexer.c \
