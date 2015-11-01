@@ -5,7 +5,7 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 20 14:05:52 2015 ludovic petrenko
-** Last update Sun Nov  1 00:53:02 2015 Antoine Baché
+** Last update Sun Nov  1 15:57:41 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -34,25 +34,10 @@ int		ope_only(t_list *list, char *str)
   t = is_in_str(str[0], list->ops);
   u = is_in_str(str[1], list->ops);
   n = 1;
-  if (t == 1)
-    {
-      list->level = list->level + 1;
-      if (u == 2 || u > 4)
-	my_error(SYNTAXE_ERROR_MSG);
-    }
-  else if (t == 2)
-    {
-      list->level = list->level - 1;
-      if (list->level < 0 || (u < 2 && str[1] != 0))
-	my_error(SYNTAXE_ERROR_MSG);
-    }
+  if (t == 1 || t == 2)
+    ope_function(list, str, t, u);
   else
-    {
-      token = tokenise(NULL, t, priority(list, str[0]), 0);
-      add_to_list(list, token);
-      if (u > 4 || u == 2)
-	my_error(SYNTAXE_ERROR_MSG);
-    }
+    ope_funct_else(list, token, t, u);
   if (u == 3 || u == 4)
     {
       if (t == 2)

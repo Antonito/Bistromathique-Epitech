@@ -5,7 +5,7 @@
 ## Login   <bache_a@epitech.net>
 ## 
 ## Started on  Fri Oct 30 20:05:42 2015 Antoine Baché
-## Last update Sun Nov  1 02:23:30 2015 Antoine Baché
+## Last update Sun Nov  1 15:59:58 2015 Antoine Baché
 ##
 
 
@@ -29,6 +29,7 @@ SRC=	addinf.c \
 	my_error.c \
 	my_strndup.c \
 	nb_length.c \
+	ope_only_function.c \
 	parser.c \
 	prepare_list.c \
 	rd_expr.c \
