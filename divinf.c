@@ -5,7 +5,7 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Fri Oct 30 22:56:50 2015 Antoine Baché
-** Last update Sun Nov  1 19:44:56 2015 Antoine Baché
+** Last update Sun Nov  1 20:22:07 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -53,7 +53,6 @@ char	*expand_div(char *nb1, char *nb2)
 
 char	*div_calc(char *nb1, char *nb2, int base, int i)
 {
-  int	j;
   char	*res;
 
   if ((res = malloc(my_strlen(nb1) + 1)) == NULL)
@@ -88,6 +87,7 @@ void	divinf(t_token *t1, t_token *t2, int base)
   int	i;
   char	*res;
 
+  i = 0;
   if ((res = malloc(my_strlen(t1->data) + 1)) == NULL)
     my_error(ERROR_MSG);
   if (my_strlen(t2->data) == 1 && t2->data[0] == 1)
@@ -98,7 +98,6 @@ void	divinf(t_token *t1, t_token *t2, int base)
     {
       free(res);
       res = div_bigger(t1->data, t2->data);
-      free(t1->data);
     }
   else
     res = div_calc(t1->data, t2->data, base, i);

@@ -5,7 +5,7 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Fri Oct 30 22:21:25 2015 Antoine Baché
-** Last update Sun Nov  1 19:34:04 2015 Antoine Baché
+** Last update Sun Nov  1 20:22:35 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -48,6 +48,7 @@ void	modinf(t_token *t1, t_token *t2, int base)
   char	*tmp;
   char	*tmp2;
 
+  i = 0;
   if (t2->data[0] == 1 && my_strlen(t2->data) == 1)
     my_error(ERROR_MSG);
   else if (my_cmp(t1->data, t2->data) == 1)

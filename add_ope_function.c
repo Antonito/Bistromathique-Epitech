@@ -5,7 +5,7 @@
 ** Login   <petren_l@epitech.net>
 ** 
 ** Started on  Tue Oct 20 14:05:52 2015 ludovic petrenko
-** Last update Sun Nov  1 18:33:46 2015 Antoine Baché
+** Last update Sun Nov  1 20:20:12 2015 Antoine Baché
 */
 
 #include <stdlib.h>
@@ -29,7 +29,6 @@ int		ope_only(t_list *list, char *str)
   int		u;
   int		n;
   t_token	*token;
-  t_token	*token2;
 
   t = is_in_str(str[0], list->ops);
   u = is_in_str(str[1], list->ops);
@@ -37,13 +36,13 @@ int		ope_only(t_list *list, char *str)
   if (t == 1 || t == 2)
     ope_function(list, str, t, u);
   else
-    ope_funct_else(list, token, t, u);
+    ope_funct_else(list, t, u);
   if (u == 3 || u == 4)
     {
       if (t == 2)
 	{
-	  token2 = tokenise(NULL, 3, priority(list, str[0]), 0);
-	  add_to_list(list, token2);
+	  token = tokenise(NULL, 3, priority(list, str[0]), 0);
+	  add_to_list(list, token);
 	}
       n = n + unary(list, str + 1);
     }

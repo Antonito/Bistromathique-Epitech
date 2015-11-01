@@ -5,7 +5,7 @@
 ** Login   <bache_a@epitech.net>
 ** 
 ** Started on  Fri Oct 30 20:06:14 2015 Antoine Baché
-** Last update Sun Nov  1 18:10:17 2015 Antoine Baché
+** Last update Sun Nov  1 20:20:37 2015 Antoine Baché
 */
 
 #ifndef MY_STRUCT_H_
@@ -72,7 +72,7 @@ char	*my_strdup(char *src);
 char	*my_strndup(char *src, int n);
 char	*negative(char *str, int s, int *n);
 int	nb_length(char *str, char *base);
-void	ope_funct_else(t_list *list, t_token *token, int t, int u);
+void	ope_funct_else(t_list *list, int t, int u);
 void	ope_function(t_list *list, char *str, int t, int u);
 int	ope_only(t_list *list, char *str);
 void	parser(t_list *list);
