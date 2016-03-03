@@ -11,7 +11,7 @@ Ex    : echo "3+6" | ./calc 0123456789 "()+-*/%" 3 ; echo
 
 Réalisé avec Arthur Arnaud et Ludovic Petrenko.
 
-Note obtenue : 18
+Note obtenue : 18 / 20
 
 ==============
 
@@ -27,4 +27,4 @@ Ex    : echo "3+6" | ./calc 0123456789 "()+-*/%" 3 ; echo
 
 Realised with Arthur Arnaud and Ludovic Petrenko.
 
-Mark : 18
+Grade : 18 / 20
