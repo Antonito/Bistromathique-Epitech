@@ -25,6 +25,6 @@ You can do the following operations : addition, subtraction, multiplication, div
 Usage : echo "calculus" | ./calc "base" "operators" "size of calculus"
 Ex    : echo "3+6" | ./calc 0123456789 "()+-*/%" 3 ; echo
 
-Realised with Arthur Arnaud and Ludovic Petrenko.
+Realized with Arthur Arnaud and Ludovic Petrenko.
 
 Grade : 18 / 20
